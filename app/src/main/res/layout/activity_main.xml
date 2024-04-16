@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <TextView
+        android:id="@+id/txtNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="16dp"
+        android:text="Número 1"
+        app:layout_constraintBottom_toTopOf="@+id/txtOperacion"
+        app:layout_constraintEnd_toStartOf="@+id/txtNumero1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/txtOperacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="108dp"
+        android:text="Operación:"
+        app:layout_constraintEnd_toStartOf="@+id/spnOperacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum1" />
+
+    <TextView
+        android:id="@+id/txtNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="85dp"
+        android:text="Número 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOperacion" />
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="164dp"
+        android:backgroundTint="#B32222"
+        android:text="Resultado"
+        android:textColor="#F8F8F8"
+        android:textColorHighlight="#BC2C2C"
+        android:textColorHint="#AE0E0E"
+        android:textColorLink="#C35B5B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero2" /><![CDATA[
+
+    />
+
+
+
+    ]]>
+
+    <Spinner
+        android:id="@+id/spnOperacion"
+        android:layout_width="205dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="76dp"
+        android:entries="@array/operaciones_array"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNumero1" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="153dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="189dp"
+        android:text="Resulatdo:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResultado" />
+
+    <EditText
+        android:id="@+id/txtNumero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnOperacion" />
+
+    <EditText
+        android:id="@+id/txtNumero1"
+        android:layout_width="215dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
